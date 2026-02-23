@@ -2,31 +2,43 @@ html {
     font-size: 16px; /* 16px = 1rem */
 }
 
+@font-face {
+  font-family: "akzidenz-grotesk-bq-extra-bold-alt";
+  src:
+    local("akzidenz-grotesk-bq-extra-bold-alt"),
+        url('../font/akzidenz-grotesk-bq-extra-bold-alt.woff2') format("woff2"),
+        url('../font/akzidenz-grotesk-bq-extra-bold-alt.woff') format("woff"),
+        url('../font/akzidenz-grotesk-bq-extra-bold-alt.eot') format("eot");
+}
+
 #image{
     background-image: url(images/radiohead.pages.jpg);
-    height:100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height:100vh;
 }
 
 .space{
-    margin: 4rem 3rem;
+    margin: 0rem 3rem 0rem 3rem;
 }
 
 #title{
-    font-family:'Bebas Neue',sans-serif;
+    font-family: "amplitude-extra-compressed", sans-serif;
+    font-weight: 900;
     color: white;
-    font-weight: 400;
-    font-size: 2.57rem;
+    font-size: 3.1rem;
     text-align: center;
+    padding-top: 4rem;
+    margin-bottom: -2rem;
 }
 
 .textsx{
-    font-family: "akzidenz-grotesk-next-pro", sans-serif;
+    font-family: "akzidenz-grotesk-bq-extra-bold-alt";
     font-weight: 800;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     color: white;
     white-space: pre-line;
     margin: -1rem 0rem;
@@ -34,10 +46,10 @@ html {
 
 .textdx{
     text-align: right;
-    font-family: "akzidenz-grotesk-next-pro", sans-serif;
+    font-family: "akzidenz-grotesk-bq-extra-bold-alt";
     font-weight: 800;
-    font-style: normal;
-    font-size: 0.8rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
     color: white;
     white-space: pre-line;
 }
@@ -180,13 +192,15 @@ No media query for `xs` since this is the default in Bootstrap */
 
    
     #title{
-        font-size: 3.5rem;
+        font-size: 4.5rem;
+        padding-top: 0rem;
     }
 
     .textsx {
         text-align: center;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
         order: 1;
         white-space: normal;
         margin-bottom: 1.5rem;
@@ -195,14 +209,15 @@ No media query for `xs` since this is the default in Bootstrap */
     .textdx{
         text-align: center;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
         white-space: normal;
     }
 
     .space{
         margin-left: 12rem;
         margin-right: 12rem;
-        margin-top: 7rem;
+        padding-top: 7rem;
         display: flex;
         flex-direction: column-reverse;
         align-items:center;
